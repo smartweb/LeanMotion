@@ -1,0 +1,65 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'methadone'
+require 'lean_motion/version'
+
+class App
+  include Methadone::Main
+  include Methadone::CLILogging
+  include Methadone::SH
+  
+  main do |command, opt|
+    case command.to_sym
+    when :create then create(opt)
+    when :create_pro then create_pro(opt)
+    when :create_user then create_user(opt)
+    when :help then show_help
+    else show_help
+    end
+
+    0 # Good!
+  end
+
+  def self.show_help
+    info "lean_motion - Command line tools for LeanMotion."
+    info "By smartweb"
+    info ""
+    info "Commands:"
+    info "  create <appname>"
+    info "    Creates a new LeanMotion app from a template."
+    info ""
+    info "  create_pro <appname>"
+    info "    Creates a new LeanMotion + ProMotion app from a template."
+    info ""
+    info "  create_user <appname>"
+    info "    Creates a new LeanMotion + ProMotion + User app from a template."
+  end
+
+  def self.create(name)
+    return puts "Usage: lean_motion create <appname>" unless name.to_s.length > 0
+    info "Creating new LeanMotion iOS app #{name}"
+    sh "motion create --template=git://coding.net/smartweb/LeanMotionTemplate.git #{name}"
+  end
+
+  def self.create_pro(name)
+    return puts "Usage: lean_motion create <appname>" unless name.to_s.length > 0
+    info "Creating new LeanMotion iOS app #{name}"
+    sh "motion create --template=git://coding.net/smartweb/LeanProMotionTemplate.git #{name}"
+  end
+
+  def self.create_user(name)
+    return puts "Usage: lean_motion create <appname>" unless name.to_s.length > 0
+    info "Creating new LeanMotion iOS app #{name}"
+    sh "motion create --template=git://coding.net/smartweb/LeanUserTemplate.git #{name}"
+  end
+
+  description "Command line for LeanMotion."
+
+  arg :command
+  arg :opt, :optional
+
+  version LeanMotion::VERSION
+
+  go!
+end
