@@ -114,3 +114,22 @@ end
 ```
 User.exist? username
 ```
+
+## LeanCloud
+链接 http://www.leancloud.com
+
+## ToDo
+1 添加关系尾性，has_many 和 
+  belongs_to
+
+## 联系作者
+email：		sam@chamobile.com
+wechat：		smartweb
+twitter: 	@samchueng
+
+## 参与
+Fork and Push
+
+## License
+MIT
+
