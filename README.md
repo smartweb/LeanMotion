@@ -122,8 +122,8 @@ User.exist? username
 * Todo http://github.com/smartweb/LeanMotionDemoTodo
 
 ## LeanCloud
-官网 http://www.leancloud.com
-API文档 https://cn.avoscloud.com/docs/api/iOS/index.html
+* 官网 http://www.leancloud.com  
+* API文档 https://cn.avoscloud.com/docs/api/iOS/index.html
 
 ## ToDo
 1 添加关系尾性，has_many 和 
