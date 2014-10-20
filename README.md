@@ -15,8 +15,8 @@ gem install lean_motion
 lean_motion create app-name
 ```
 
-3、设置LeanCloud的App ID和App Key
-修改 app_delegate.rb
+3、修改 app_delegate.rb  
+设置LeanCloud的App ID和App Key
 
 ```
 app_id   = "your_app_id"
