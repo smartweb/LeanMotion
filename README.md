@@ -76,6 +76,11 @@ Product.first
 Product.sort(:createdAt=>:desc).find
 ```
 
+分页(默认是20条记录/页)
+```
+Product.page(current_page, pagesize)
+```
+
 4、帐号相关
 注册帐号
 ```
@@ -103,6 +108,7 @@ User.logout
 ```
 User.login?
 end
+```
 
 判断用户是否已存在
 ```
