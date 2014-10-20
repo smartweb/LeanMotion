@@ -19,8 +19,8 @@ lean_motion create app-name
 修改 app_delegate.rb
 
 ```
-    app_id   = "your_app_id"
-    app_key  = "your_app_key" 
+app_id   = "your_app_id"
+app_key  = "your_app_key" 
 ```
 
 4、运行
@@ -114,6 +114,10 @@ end
 ```
 User.exist? username
 ```
+
+## Demo
+* 注册、登录、修改资料 http://github.com/smartweb/LeanMotionDemoAccount
+* Todo http://github.com/smartweb/LeanMotionDemoTodo
 
 ## LeanCloud
 链接 http://www.leancloud.com
