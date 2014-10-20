@@ -1,7 +1,9 @@
 # LeanMotion
 
-LeanCloud ，一个为移动应用提供数据统计、数据存储、消息推送、发送短信、发送邮件等云服务商。
-LeanMotion 是一个RubyMotion的Gem，可以更加方便地使用LeanCloud SDK。用更Ruby的写法来操作LeanCloud的数据，类Rails的ActiveRecord，增删查改。
+LeanCloud ，一个为移动应用提供数据统计、数据存储、消息推送、发送短信、发送邮件等云服务商。  
+
+LeanMotion 是一个RubyMotion的Gem，可以更加方便地使用LeanCloud SDK。  
+用更Ruby的写法来操作LeanCloud的数据，类Rails的ActiveRecord，增删查改。
 
 ## 安装说明
 
@@ -120,7 +122,8 @@ User.exist? username
 * Todo http://github.com/smartweb/LeanMotionDemoTodo
 
 ## LeanCloud
-链接 http://www.leancloud.com
+官网 http://www.leancloud.com
+API文档 https://cn.avoscloud.com/docs/api/iOS/index.html
 
 ## ToDo
 1 添加关系尾性，has_many 和 
