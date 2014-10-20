@@ -123,8 +123,8 @@ User.exist? username
   belongs_to
 
 ## 联系作者
-email：		sam@chamobile.com
-wechat：		smartweb
+email：		sam@chamobile.com  
+wechat：		smartweb  
 twitter: 	@samchueng
 
 ## 参与
